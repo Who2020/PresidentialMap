@@ -90,7 +90,7 @@
 					.enter()
 					.append("rect")
 					.attr("width", function(d){
-						return scale * d.properties.votes;
+						return scale * d.properties.votes - 1;
 					})
 					.attr("height", "50")
 					.attr("x", function(d){total += (scale * d.properties.votes); return total - scale * d.properties.votes;})
